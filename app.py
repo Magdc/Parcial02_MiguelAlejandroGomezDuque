@@ -1,17 +1,3 @@
-"""
-Microservicio simple (un solo archivo) que expone:
-GET /factorial/<n>
-Devuelve JSON con:
-- numero: el número recibido
-- factorial: el factorial (como cadena para evitar problemas con tamaños enormes)
-- paridad: "par" o "impar" según corresponda al factorial
-
-Uso:
-pip install -r requirements.txt
-python app.py
-
-Ejemplo: GET http://localhost:5000/factorial/5
-"""
 from flask import Flask, jsonify
 from math import factorial
 
@@ -45,5 +31,5 @@ def factorial_route(n: int):
 
 
 if __name__ == '__main__':
-    # Modo desarrollo. En producción usar un WSGI server (gunicorn/uWSGI).
+    # Modo desarrollo.
     app.run(host='0.0.0.0', port=5000, debug=True)
