@@ -23,7 +23,7 @@ GET /factorial/<n>
 Ejemplo de respuesta para `/factorial/5`:
 
 ```json
-{ "numero": 5, "factorial": "120", "paridad": "par" }
+{ "numero": 5, "factorial": "120", "paridad": "impar" }
 ```
 
 ## Contrato (mini)
